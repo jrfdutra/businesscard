@@ -2,12 +2,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinha todos os itens ao lado esquerdo */
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 20px; /* Adiciona algum espaço ao redor do conteúdo */
-    position: relative; /* Necessário para o pseudo-elemento */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    text-align: left; /* Alinha o texto à esquerda */
+    position: relative;
 }
 
 body.bg_socials {
@@ -28,27 +29,26 @@ body.bg_socials::before {
     z-index: -1; /* Coloca a sobreposição atrás do conteúdo */
 }
 
-h1 {
+h1, h2 {
     font-family: 'Lato', sans-serif; /* Aplica a fonte Lato */
-    margin: 20px 0;
-    text-align: left; /* Garante que o h1 esteja alinhado à esquerda */
-    align-self: flex-start; /* Garante que o h1 fique alinhado à esquerda dentro do container */
+    color: white; /* Define a cor do texto como branco */
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 2rem; /* Ajusta o tamanho da fonte conforme necessário */
 }
 
 h2 {
-    font-family: 'Lato', sans-serif; /* Aplica a fonte Lato */
-    margin: 20px 0;
-    text-align: left; /* Garante que o h2 esteja alinhado à esquerda */
-    align-self: flex-start; /* Garante que o h2 fique alinhado à esquerda dentro do container */
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte conforme necessário */
 }
 
 .wrapper {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     gap: 20px;
-    margin: 0;
-    justify-content: flex-start; /* Alinha os ícones à esquerda */
 }
 
 .icon {
