@@ -32,11 +32,11 @@ body.bg_socials::before {
 
 .container {
     position: relative;
-    left: -9cm; /* Ajuste conforme necessário */
+    left: -9cm;
     text-align: center; /* Centraliza o texto dentro do container */
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Lato', sans-serif;
     color: white;
     margin: 10px 0;
@@ -61,6 +61,38 @@ h2 {
     display: flex;
     gap: 20px;
     justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo específico para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .container {
+        left: 0;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .wrapper {
+        flex-direction: row; /* Mantém os itens lado a lado */
+        gap: 10px; /* Ajusta o espaço entre os itens */
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .wrapper {
+        flex-direction: row; /* Mantém os itens lado a lado em telas maiores */
+    }
 }
 
 .icon {
@@ -113,28 +145,15 @@ h2 {
     color: #e1306c;
 }
 
-/* Adicione estilos específicos para dispositivos móveis */
-@media only screen and (max-width: 768px) {
-    .container {
-        left: 0; /* Remove o ajuste para a esquerda */
-        padding: 0 20px; /* Adiciona um pouco de padding */
-    }
+/* Adiciona o mapa no final da tela */
+.map-container {
+    margin: 20px 0;
+}
 
-    h1 {
-        font-size: 1.5rem; /* Ajusta o tamanho da fonte */
-    }
-
-    h2 {
-        font-size: 1.25rem; /* Ajusta o tamanho da fonte */
-    }
-
-    .wrapper {
-        flex-direction: column; /* Alinha os itens em coluna */
-        gap: 10px; /* Ajusta o espaço entre os itens */
-    }
-
-    .icon {
-        width: 40px; /* Ajusta o tamanho do ícone */
-        height: 40px;
-    }
+/* Estilo do footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }
