@@ -30,7 +30,8 @@ body.bg_socials::before {
 }
 
 .container {
-    padding-left: 20px; /* Ajusta a distância dos elementos em relação à borda esquerda da tela */
+    position: relative;
+    left: -9cm; /* Move o contêiner 9 cm para a esquerda */
 }
 
 h1, h2 {
