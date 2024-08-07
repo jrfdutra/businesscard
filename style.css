@@ -12,6 +12,10 @@ body {
     position: relative;
 }
 
+.favicon {
+    color: #6A0D91;
+}
+
 body.bg_socials {
     background-image: url('img/background.jpg');
     background-size: cover;
