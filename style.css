@@ -1,3 +1,4 @@
+/* Estilo geral para telas maiores */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -6,8 +7,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    flex-direction: column; /* Alinha os elementos verticalmente */
-    text-align: left; /* Alinha o texto à esquerda */
+    flex-direction: column;
+    text-align: left;
     position: relative;
 }
 
@@ -15,7 +16,7 @@ body.bg_socials {
     background-image: url('img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Faz o background ficar fixo ao rolar a página */
+    background-attachment: fixed;
 }
 
 body.bg_socials::before {
@@ -25,29 +26,30 @@ body.bg_socials::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Escurece a imagem de fundo */
-    z-index: -1; /* Coloca a sobreposição atrás do conteúdo */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .container {
     position: relative;
-    left: -9cm; /* Move o contêiner 9 cm para a esquerda */
+    left: -9cm; /* Ajuste conforme necessário */
+    text-align: center; /* Centraliza o texto dentro do container */
 }
 
 h1, h2 {
-    font-family: 'Lato', sans-serif; /* Aplica a fonte Lato */
-    color: white; /* Define a cor do texto como branco */
+    font-family: 'Lato', sans-serif;
+    color: white;
     margin: 10px 0;
 }
 
 h1 {
-    font-size: 2rem; /* Ajusta o tamanho da fonte conforme necessário */
+    font-size: 2rem;
     padding: 20px;
     margin: 3px;
 }
 
 h2 {
-    font-size: 1.5rem; /* Ajusta o tamanho da fonte conforme necessário */
+    font-size: 1.5rem;
     padding: 20px;
     margin: -25px;
 }
@@ -58,7 +60,7 @@ h2 {
     margin: 20px;
     display: flex;
     gap: 20px;
-    align-items: flex-start;
+    justify-content: center; /* Centraliza os itens horizontalmente */
 }
 
 .icon {
@@ -88,7 +90,7 @@ h2 {
     border-radius: 5px;
     font-size: 14px;
     display: none;
-    white-space: nowrap; /* Garante que o texto não quebre */
+    white-space: nowrap;
 }
 
 .icon:hover .tooltip {
@@ -110,12 +112,29 @@ h2 {
 .icon.instagram {
     color: #e1306c;
 }
-.icon a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: inherit; /* Herda a cor do ícone pai */
-}
 
-.icon:hover {
-    transform: translateY(-10px);
-}
+/* Adicione estilos específicos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .container {
+        left: 0; /* Remove o ajuste para a esquerda */
+        padding: 0 20px; /* Adiciona um pouco de padding */
+    }
 
+    h1 {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .wrapper {
+        flex-direction: column; /* Alinha os itens em coluna */
+        gap: 10px; /* Ajusta o espaço entre os itens */
+    }
+
+    .icon {
+        width: 40px; /* Ajusta o tamanho do ícone */
+        height: 40px;
+    }
+}
