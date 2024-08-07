@@ -29,10 +29,14 @@ body.bg_socials::before {
     z-index: -1; /* Coloca a sobreposição atrás do conteúdo */
 }
 
+.container {
+    padding-left: 20px; /* Ajusta a distância dos elementos em relação à borda esquerda da tela */
+}
+
 h1, h2 {
     font-family: 'Lato', sans-serif; /* Aplica a fonte Lato */
     color: white; /* Define a cor do texto como branco */
-    margin: 10px 20px;
+    margin: 10px 0;
 }
 
 h1 {
@@ -74,7 +78,7 @@ h2 {
     top: -35px;
     background: #333;
     color: #fff;
-    padding: 10px 10px;
+    padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
     display: none;
