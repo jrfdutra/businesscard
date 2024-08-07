@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+body.bg_socials {
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Faz o background ficar fixo ao rolar a página */
+}
+
+h1 {
+    font-family: 'Lato', sans-serif; /* Aplica a fonte Lato */
+    align-self: center; /* Alinha o h1 à esquerda */
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+}
+
+.icon .tooltip {
+    position: absolute;
+    top: -35px;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+    white-space: nowrap; /* Garante que o texto não quebre */
+}
+
+.icon:hover .tooltip {
+    display: block;
+}
+
+.icon .fab {
+    font-size: 24px;
+}
+
+.icon.facebook {
+    color: #3b5998;
+}
+
+.icon.x {
+    color: #1da1f2;
+}
+
+.icon.instagram {
+    color: #e1306c;
+}
