@@ -21,6 +21,7 @@ body.bg_socials {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
 
 body.bg_socials::before {
@@ -37,7 +38,11 @@ body.bg_socials::before {
 .container {
     position: relative;
     left: -9cm;
+    padding: 15px; /* Adicionado padding */
     text-align: center; /* Centraliza o texto dentro do container */
+    background: rgba(255, 255, 255, 0.334); /* Caixa translúcida atrás dos avatares e textos */
+    border-radius: 15px; /* Adiciona bordas arredondadas à caixa translúcida */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.014); /* Adiciona uma sombra suave para destacar a caixa */
 }
 
 h1, h2, h4 {
@@ -57,6 +62,7 @@ h2 {
     padding: 20px;
     margin: -25px;
 }
+
 .phone a {
     color: white; /* Inherit the color from the parent element */
     text-decoration: none; /* Remove the underline */
@@ -158,17 +164,4 @@ h2 {
 
 .icon.instagram {
     color: #e1306c;
-}
-
-/* Adiciona o mapa no final da tela */
-.map-container {
-    margin: 20px 0;
-}
-
-/* Estilo do footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
 }
