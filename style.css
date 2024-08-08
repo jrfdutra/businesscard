@@ -40,7 +40,7 @@ body.bg_socials::before {
     text-align: center; /* Centraliza o texto dentro do container */
 }
 
-h1, h2, h3 {
+h1, h2, h4 {
     font-family: 'Lato', sans-serif;
     color: white;
     margin: 10px 0;
@@ -56,6 +56,15 @@ h2 {
     font-size: 1.5rem;
     padding: 20px;
     margin: -25px;
+}
+.phone a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove the underline */
+}
+
+.phone a:hover {
+    color: inherit; /* Ensure the color doesn't change on hover */
+    text-decoration: none; /* Ensure no underline appears on hover */
 }
 
 .wrapper {
